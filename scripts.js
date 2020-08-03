@@ -8,6 +8,23 @@
  input.forEach(input => input.addEventListener('change', handleUpdate));
  input.forEach(input => input.addEventListener('mousemove', handleUpdate));
 
- function changeImage() {
-    document.getElementById("first").src = document.getElementById("input-file").value;
+function changeImage() {
+    let newPhoto = document.getElementById("upload").value.split("\\")[2];
+    document.getElementById("first").src = `./assets/${newPhoto}`;
+    console.log(newPhoto);
 }
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        $('#first').attr('src', e.target.result);
+      }
+  
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+  
+  $("#filePhoto").change(function() {
+    readURL(this);
+  });
