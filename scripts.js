@@ -28,3 +28,5 @@ function readURL(input) {
   $("#filePhoto").change(function() {
     readURL(this);
   });
+
+  

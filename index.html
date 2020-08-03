@@ -11,15 +11,16 @@
      <h2>Picture It &#128248 <span class='h1'></span></h2>
 
     <div class="controls">
-        
-        <label for="spacing">Padding:</label>
-        <input type="range" id="spacing" name="spacing" min="10" max="200" value="10" data-sizing="px">
-
-        <label for="blur">Blur:</label>
-        <input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px">
 
         <label for="base">Background</label>
-        <input type="color" id="base" name="base" value="#ffc600"> <br>
+        <input type="color" id="base" name="base" value="#1a791f"> <br> <br>
+        
+        <label for="spacing">Padding:</label>
+        <input type="range" id="spacing" name="spacing" min="10" max="200" value="40" data-sizing="px"> <br> <br>
+
+        <label for="blur">Blur:</label>
+        <input type="range" name="blur" id="blur" min="0" max="25" value="4" data-sizing="px"> <br> <br>
+
 
         <input type="file" name="filePhoto" value="" id="filePhoto" class="required borrowerImageFile" data-errormsg="PhotoUploadErrorMsg">
 
@@ -27,7 +28,6 @@
     
     <img  id="first" src="./assets/glitter.jpg">
     
-
     <script src="./scripts.js"></script>
  </body>
  </html>
