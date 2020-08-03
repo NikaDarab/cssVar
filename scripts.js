@@ -7,3 +7,7 @@
 
  input.forEach(input => input.addEventListener('change', handleUpdate));
  input.forEach(input => input.addEventListener('mousemove', handleUpdate));
+
+ function changeImage() {
+    document.getElementById("first").src = document.getElementById("input-file").value;
+}
