@@ -3,28 +3,29 @@
  <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>CSS Variables and JS</title>
+     <title>Picture it &#128248</title>
      <link rel="stylesheet" href="style.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  </head>
  <body>
-     <h2>CSS variables with <span class='h1'>JS</span></h2>
+     <h2>Picture It &#128248 <span class='h1'></span></h2>
 
     <div class="controls">
-        <input type="file" name="filePhoto" value="" id="filePhoto" class="required borrowerImageFile" data-errormsg="PhotoUploadErrorMsg">
-
+        
         <label for="spacing">Padding:</label>
         <input type="range" id="spacing" name="spacing" min="10" max="200" value="10" data-sizing="px">
 
         <label for="blur">Blur:</label>
         <input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px">
 
-        <label for="base">Basic Color</label>
-        <input type="color" id="base" name="base" value="#ffc600">
+        <label for="base">Background</label>
+        <input type="color" id="base" name="base" value="#ffc600"> <br>
+
+        <input type="file" name="filePhoto" value="" id="filePhoto" class="required borrowerImageFile" data-errormsg="PhotoUploadErrorMsg">
 
     </div>
     
-    <img  id="first" src="./assets/starfish.jpg">
+    <img  id="first" src="./assets/glitter.jpg">
     
 
     <script src="./scripts.js"></script>
