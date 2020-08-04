@@ -25,8 +25,7 @@
      width: 80%;
      padding: var(--spacing);
      background:var(--base);
-     /* filter: blur(var(--blur)); */
-     filter: var(--filter);
+     filter: blur(var(--blur));
      
  }
 
